@@ -1,0 +1,8 @@
+google-generativeai
+flask
+flask-cors
+nltk
+numpy
+tensorflow-cpu
+pickle-mixin
+gunicorn

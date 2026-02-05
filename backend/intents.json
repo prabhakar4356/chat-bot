@@ -1,0 +1,588 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Hey"
+            ],
+            "responses": [
+                "Hello! Welcome to M.P.Nachimuthu M.Jaganathan Engineering College's Enquiry System. How can I help you today?",
+                "Hi there, how can I help you?",
+                "Greetings from MPNMJ Engineering College! What can I do for you?",
+                "Good to see you again! Any questions about our college?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "college_name",
+            "patterns": [
+                "What is the college name?",
+                "name of this college",
+                "which college is this",
+                "college name please",
+                "what is your college name?"
+            ],
+            "responses": [
+                "This is M.P.Nachimuthu M.Jaganathan Engineering College (MPNMJEC).",
+                "The college name is M.P.Nachimuthu M.Jaganathan Engineering College, located in Chennimalai.",
+                "You are chatting with the assistant for M.P.Nachimuthu M.Jaganathan Engineering College."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "website",
+            "patterns": [
+                "website",
+                "what is the website?",
+                "official website",
+                "college website link",
+                "where can I find the website?"
+            ],
+            "responses": [
+                "You can visit our official website at http://www.mpnmjec.ac.in",
+                "The official website of MPNMJEC is: http://www.mpnmjec.ac.in"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "establishment",
+            "patterns": [
+                "When was the college opened?",
+                "establishment year",
+                "when was it started?",
+                "how old is the college?",
+                "opening year of the college",
+                "when was MPNMJEC founded?"
+            ],
+            "responses": [
+                "M.P.Nachimuthu M.Jaganathan Engineering College was established in 2001. The foundation for this educational excellence was laid in 1984 with the establishment of the M.P.Nachimuthu M.Jaganathan Polytechnic College (Diploma).",
+                "The engineering institution was opened in 2001, but the journey started in 1984 when the Polytechnic (Diploma) college was founded."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "founder",
+            "patterns": [
+                "Who is the founder?",
+                "founder of the college",
+                "who started this college?",
+                "founder name"
+            ],
+            "responses": [
+                "The founder of MPNMJEC is Udyog Rattan Thiru. J. Sudhanandhen.",
+                "Thiru. J. Sudhanandhen is the visionary founder of our college."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "correspondent",
+            "patterns": [
+                "Who is the correspondent?",
+                "correspondent name",
+                "Who is Dr. Vasantha Sudhanandhen?"
+            ],
+            "responses": [
+                "The correspondent of our college is Dr. Vasantha Sudhanandhen.",
+                "Dr. Vasantha Sudhanandhen serves as the Correspondent for MPNMJEC."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "principal",
+            "patterns": [
+                "Who is the principal?",
+                "principal name",
+                "Who is Dr. M. Ramesh?",
+                "name of the principal"
+            ],
+            "responses": [
+                "The principal of our college is Dr. M. Ramesh.",
+                "Dr. M. Ramesh is the Principal of MPNMJEC."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you later, thanks for visiting MPNMJEC!",
+                "Have a nice day!",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+                "You're welcome!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, I don't understand that. You can ask about our courses, facilities, or admissions.",
+                "Please give me more info. I can help with department details or college location.",
+                "Not sure I understand. Try asking 'What are the UG courses?'",
+                "Could you please rephrase that?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I can guide you through admissions, UG/PG courses, facilities (Library, Hostel, Transport), and placements at MPNMJEC.",
+                "I provide information about our departments, founder, correspondent, principal, and campus location.",
+                "I am here to answer your queries regarding the MPNMJEC college experience."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ug_courses",
+            "patterns": [
+                "What are the UG courses?",
+                "list of undergraduate courses",
+                "BE courses",
+                "B.Tech courses",
+                "B.E departments"
+            ],
+            "responses": [
+                "M.P.Nachimuthu M.Jaganathan Engineering College offers the following UG courses: \n1. Civil Engineering\n2. Computer Science and Engineering\n3. Electronics and Communication Engineering\n4. Electrical and Electronics Engineering\n5. Information Technology\n6. Mechanical Engineering",
+                "Our UG departments include Civil, CSE, ECE, EEE, IT, and Mechanical Engineering."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "ece_department",
+            "patterns": [
+                "ece",
+                "electronics and communication engineering",
+                "ece department",
+                "ece hod",
+                "seats in ece"
+            ],
+            "responses": [
+                "The Electronics and Communication Engineering (ECE) department at MPNMJEC has a total intake of 60 seats. The HOD is Dr. R. Mohan, ASP/ECE.",
+                "In the ECE department, the total number of seats is 60 and the HOD name is r.mohan asp/ece."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "cse_department",
+            "patterns": [
+                "cse",
+                "computer science and engineering",
+                "cse department",
+                "cse hod",
+                "seats in cse"
+            ],
+            "responses": [
+                "The Computer Science and Engineering (CSE) department at MPNMJEC has an intake of 60 seats. The HOD is Mr. K.N. Sivakumar.",
+                "In the CSE department, we have 60 seats and the HOD is Mr. K.N. Sivakumar."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "civil_department",
+            "patterns": [
+                "civil",
+                "civil engineering",
+                "civil department",
+                "civil hod",
+                "seats in civil"
+            ],
+            "responses": [
+                "The Civil Engineering department at MPNMJEC has an intake capacity of 60 seats. The HOD is Dr. R. Kavidha.",
+                "Our Civil department offers 60 seats and is headed by Dr. R. Kavidha."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "eee_department",
+            "patterns": [
+                "eee",
+                "electrical and electronics engineering",
+                "eee department",
+                "eee hod",
+                "seats in eee"
+            ],
+            "responses": [
+                "The Electrical and Electronics Engineering (EEE) department at MPNMJEC has 60 seats available. The HOD is Dr. D. Sabapathi.",
+                "The EEE department intake is 60 students and the HOD is Dr. D. Sabapathi."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "it_department",
+            "patterns": [
+                "it",
+                "information technology",
+                "it department",
+                "it hod",
+                "seats in it"
+            ],
+            "responses": [
+                "The Information Technology (IT) department at MPNMJEC has an intake of 60 seats. The HOD is Dr. T. Sureshkumar.",
+                "Our IT department provides 60 seats and is led by Dr. T. Sureshkumar."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "mechanical_department",
+            "patterns": [
+                "mechanical",
+                "mechanical engineering",
+                "mechanical department",
+                "mech hod",
+                "seats in mechanical"
+            ],
+            "responses": [
+                "The Mechanical Engineering department at MPNMJEC has an intake of 60 seats. The HOD is Dr. K.P. Vetrivel.",
+                "Mechanical department intake is 60 seats and the HOD name is Dr. K.P. Vetrivel."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "mca_department",
+            "patterns": [
+                "mca",
+                "master of computer applications",
+                "mca department",
+                "mca hod",
+                "seats in mca",
+                "mca intake"
+            ],
+            "responses": [
+                "The Master of Computer Applications (MCA) department at MPNMJEC has an intake of 60 seats. The HOD is Mr. D. Viswanathan (Associate Professor).",
+                "Our MCA department offers 60 seats and is headed by Mr. D. Viswanathan."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "mba_department",
+            "patterns": [
+                "mba",
+                "master of business administration",
+                "mba department",
+                "mba hod",
+                "seats in mba",
+                "mba intake"
+            ],
+            "responses": [
+                "The Master of Business Administration (MBA) department at MPNMJEC has an intake of 60 seats. The HOD is Dr. V. Ravikumar (Associate Professor).",
+                "Our MBA program has a total of 60 seats and is led by Dr. V. Ravikumar."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "pg_courses",
+            "patterns": [
+                "What are the PG courses?",
+                "list of postgraduate courses",
+                "Masters courses",
+                "M.E. courses",
+                "MBA and MCA"
+            ],
+            "responses": [
+                "MPNMJEC offers various PG courses including: \n- M.E. CAD/CAM\n- M.E. Computer Science and Engineering\n- M.E. Power System Engineering\n- M.E. Structural Engineering\n- M.E. VLSI Design\n- Master of Business Administration (MBA)\n- Master of Computer Applications (MCA)",
+                "Our PG programs include multiple M.E. specializations, MBA, and MCA."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "facilities",
+            "patterns": [
+                "What facilities are available?",
+                "college facilities",
+                "Does the college have a library?",
+                "Is there internet facility?",
+                "sports and gym"
+            ],
+            "responses": [
+                "Our campus provides excellent facilities including: Gym, Library, Sports, Transport, Internet, and Hostel.",
+                "MPNMJEC offers a well-equipped Library, Gym, Sports grounds, 24/7 Internet, and Transport facilities for students."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "clubs",
+            "patterns": [
+                "What are the clubs in college?",
+                "list of college clubs",
+                "clubs available",
+                "technical clubs",
+                "IOT club",
+                "AI club"
+            ],
+            "responses": [
+                "MPNMJEC has various active clubs including:\n1. IoT Club (Department of ECE)\n2. AI Club (Departments of IT and CSE)",
+                "We have an IoT club running in the ECE department and an AI club running in both the IT and CSE departments."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "Where is the college located?",
+                "How to reach the campus?",
+                "Address of the college",
+                "Google maps link",
+                "Chennimalai college"
+            ],
+            "responses": [
+                "The college is located at Sudhanandhen Kalvi Nagar, Chennimalai, Erode - 638112, Tamil Nadu.\n\nYou can find us on Google Maps here: https://maps.google.com/?q=M.P.Nachimuthu+M.Jaganathan+Engineering+College",
+                "M.P.Nachimuthu M.Jaganathan Engineering College is situated in Sudhanandhen Kalvi Nagar, Chennimalai, Erode, Tamil Nadu 638112. Click for directions: https://maps.google.com/?q=MPNMJ+Engineering+College+Chennimalai"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "hostel",
+            "patterns": [
+                "Is there a hostel facility?",
+                "hostel details",
+                "boys and girls hostel",
+                "accommodation"
+            ],
+            "responses": [
+                "Yes, we provide separate hostel facilities for boys and girls. The food provided is purely vegetarian (Veg), and we ensure comfort by providing individual cots in every room. All types of accommodations are possible here.",
+                "MPNMJEC offers secure hostel accommodation with vegetarian (Veg) food service. Rooms are equipped with individual cots for each student, ensuring a comfortable stay."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "transport",
+            "patterns": [
+                "Is there transport facility?",
+                "bus routes",
+                "college bus"
+            ],
+            "responses": [
+                "Yes, the college operates buses for students and staff from various parts of the Erode district.",
+                "Transport facility is available at MPNMJEC with multiple bus routes covering surrounding areas."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact details",
+                "phone number",
+                "how to call the college",
+                "mobile number",
+                "contact info",
+                "admission contact"
+            ],
+            "responses": [
+                "You can contact MPNMJEC at 04294 - 250242 or 04294 - 251616. For admissions, you can call 98652 33600 or 73736 44088.",
+                "Our contact numbers are 04294-250242 and 04294-251616. Admission queries: 9865233600, 7373644088."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "email",
+            "patterns": [
+                "email id",
+                "college email",
+                "official email address",
+                "how to mail the college",
+                "admission email"
+            ],
+            "responses": [
+                "The official email of MPNMJEC is mpnmjec@mpnmjec.ac.in. For admissions, you can email admissionmpnmj@gmail.com.",
+                "You can reach us via email at mpnmjec@mpnmjec.ac.in or admissionmpnmj@gmail.com for admission-related queries."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "campus_infrastructure",
+            "patterns": [
+                "campus area",
+                "infrastructure",
+                "how big is the campus?",
+                "college building",
+                "classroom facilities",
+                "ICT enabled classrooms"
+            ],
+            "responses": [
+                "Our campus spans 22.71 acres and features 38 ICT-enabled classrooms, state-of-the-art laboratories, and a modern auditorium with a seating capacity of 276.",
+                "The MPNMJEC campus is spread across 22.7 acres with excellent infrastructure including specialized labs and smart classrooms."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "library_details",
+            "patterns": [
+                "tell me about library",
+                "library books",
+                "e-books and journals",
+                "NPTEL videos",
+                "DELNET access"
+            ],
+            "responses": [
+                "Our library is one of the largest in Erode district, providing access to textbooks, e-journals, NPTEL videos, and DELNET resources.",
+                "The college library is well-stocked with a vast collection of books, magazines, and digital resources like e-books and project reports."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "sports_facilities",
+            "patterns": [
+                "sports facilities",
+                "playground",
+                "indoor games",
+                "gym and yoga",
+                "basketball court"
+            ],
+            "responses": [
+                "We have extensive sports facilities including a large playground for football, cricket, and basketball, along with two gyms and a dedicated yoga center.",
+                "MPNMJEC encourages sports with fields for various outdoor games and facilities for indoor games like table tennis, chess, and carom."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "driving_school",
+            "patterns": [
+                "Is there a driving school?",
+                "driving school in college",
+                "can I learn driving in college?",
+                "driving school facility",
+                "driving classes"
+            ],
+            "responses": [
+                "Yes, driving school facilities are available within the college campus for students' convenience.",
+                "Yes, we have a driving school available in our college premises to help students learn driving."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "labs",
+            "patterns": [
+                "What labs are available?",
+                "college labs",
+                "Does the college have a labs?",
+                "Is the labs have internet facility?"
+            ],
+            "responses": [
+                "Our campus provides excellent facilities including: Gym, Library, Sports, Transport, Internet, and Hostel.",
+                "MPNMJEC offers a well-equipped Library, Gym, Sports grounds, 24/7 Internet, and Transport facilities for students."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "food",
+            "patterns": [
+                "What type of food is provided?",
+                "is food vegetarian?",
+                "food in college",
+                "mess food",
+                "canteen food",
+                "vegetarian or non-vegetarian",
+                "veg or non-veg food",
+                "what food is served?"
+            ],
+            "responses": [
+                "In M.P.Nachimuthu M.Jaganathan Engineering College (MPNMJEC), we provide purely vegetarian (Veg) food to all students in the mess and canteen.",
+                "M.P.Nachimuthu M.Jaganathan Engineering College follows a strictly vegetarian food policy in its mess and canteen facilities.",
+                "Only vegetarian food is provided at MPNMJEC to ensure a healthy and traditional dining experience for all students."
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Enquiry Chatbot | AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+    <div class="container">
+        <header>
+            <div class="header-main">
+                <div class="logo">
+                    <img src="logo.png" alt="MPNMJEC Logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-icon-fallback" style="display:none;">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <span>EduBot</span>
+                </div>
+                <div class="status">
+                    <span class="dot"></span> Online
+                </div>
+            </div>
+            <div class="college-info">
+                <h1>M.P.Nachimuthu M.Jaganathan Engineering College</h1>
+                <p>Nurturing Excellence, Empowering Minds</p>
+            </div>
+        </header>
+
+        <main id="chat-box">
+            <div class="message bot-message">
+                <div class="avatar"><img src="logo.png"
+                        style="width:100%; height:100%; object-fit:contain; border-radius:inherit;"
+                        onerror="this.outerHTML='<i class=\'fas fa-robot\'></i>'"></div>
+                <div class="text">Hello! I'm your College AI Assistant. How can I help you today?</div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="quick-menu" id="quick-menu">
+                <button class="menu-item" onclick="sendQuickMessage('UG Courses')">UG Courses</button>
+                <button class="menu-item" onclick="sendQuickMessage('PG Courses')">PG Courses</button>
+                <button class="menu-item" onclick="sendQuickMessage('Admission')">Admission</button>
+                <button class="menu-item" onclick="sendQuickMessage('Clubs')">Clubs</button>
+                <button class="menu-item" onclick="sendQuickMessage('Contact')">Contact</button>
+                <button class="menu-item" onclick="sendQuickMessage('Location')">Location</button>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
+                <button id="send-btn" title="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
