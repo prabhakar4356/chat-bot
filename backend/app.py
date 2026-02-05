@@ -42,12 +42,14 @@ def index():
 
 stemmer = LancasterStemmer()
 
-# Load data
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+# Load data with absolute paths for Vercel/Render compatibility
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open('intents.json') as file:
+words = pickle.load(open(os.path.join(BASE_DIR, 'words.pkl'), 'rb'))
+classes = pickle.load(open(os.path.join(BASE_DIR, 'classes.pkl'), 'rb'))
+model = load_model(os.path.join(BASE_DIR, 'chatbot_model.h5'))
+
+with open(os.path.join(BASE_DIR, 'intents.json')) as file:
     intents = json.load(file)
 
 def clean_up_sentence(sentence):
