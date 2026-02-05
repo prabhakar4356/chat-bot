@@ -1,0 +1,56 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Git
+.git/
+.gitignore
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+test.zip
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment
+.env
+.env.local
+
+# Training files (not needed for deployment)
+backend/train_model.py
+backend/test_gemini.py
+backend/list_models.py
+
+# Deployment configs for other platforms
+Procfile
+start_chatbot.bat
+DEPLOY_GUIDE_RENDER.md
+DEPLOY_GUIDE_VERCEL.md
