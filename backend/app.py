@@ -1,8 +1,24 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
+import os
+
+# Set NLTK data path for cloud environments (Vercel/Render)
+nltk_data_path = os.path.join('/tmp', 'nltk_data')
+if not os.path.exists(nltk_data_path):
+    os.makedirs(nltk_data_path)
+nltk.data.path.append(nltk_data_path)
+
+# Download required NLTK resources
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir=nltk_data_path)
+
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab', download_dir=nltk_data_path)
 from nltk.stem import LancasterStemmer
 import pickle
 import numpy as np
