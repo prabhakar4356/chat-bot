@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 from nltk.stem import LancasterStemmer
 import pickle
 import numpy as np
